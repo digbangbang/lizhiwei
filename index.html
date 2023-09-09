@@ -18,9 +18,17 @@
         .section {
             margin-bottom: 30px;
         }
-        img {
-            float: right;
+        .container {
+            width: 100%; /* 确保容器宽度占满父容器 */
+            overflow: hidden; /* 清除浮动元素的影响 */
         }
+        .text {
+            float: left; /* 左浮动文本 */
+            width: 70%; /* 文本宽度占据容器的70% */
+        }
+        .image {
+            float: right; /* 右浮动图片 */
+            width: 30%; /* 图片宽度占据容器的30% */
     </style>
 </head>
 <body>
