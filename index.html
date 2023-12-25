@@ -17,10 +17,10 @@
         }
         .section {
             margin-bottom: 30px;
+            overflow: hidden; /* 清除浮动元素的影响 */
         }
         .container {
             width: 100%; /* 确保容器宽度占满父容器 */
-            overflow: hidden; /* 清除浮动元素的影响 */
         }
         .text {
             float: left; /* 左浮动文本 */
@@ -29,6 +29,7 @@
         .image {
             float: right; /* 右浮动图片 */
             width: 30%; /* 图片宽度占据容器的30% */
+        }
     </style>
 </head>
 <body>
@@ -36,28 +37,30 @@
         <h1>Li Zhiwei</h1>
     </header>
 
-    <body>
-    <img src="照片4.jpg" alt="Li Zhiwei" style="width: 300px; height: auto;">
-    </body>
+    <div class="container">
+        <div class="text">
+            <section class="section">
+                <h2>Message</h2>
+                <p>E-mail: 23210980055@m.fudan.edu.cn</p>
+                <p>Phone: (+86)19121702023</p>
+            </section>
 
-    <section class="section">
-        <h2>Message</h2>
-        <p>E-mail: 23210980055@m.fudan.edu.cn</p>
-        <p>Phone: (+86)19121702023</p>
-    </section>
+            <section class="section">
+                <h2>Education</h2>
+                <p><span>2023.09 - 2025.06</span>Fudan University Master of Applied Statistics</p>
+                <p><span>2019.09 - 2023.06</span>Shanghai University of Finance and Economics Bachelor of Statistics</p>
+            </section>
 
-    <section class="section">
-        <h2>Education</h2>
-        <p style="white-space: pre;">Fudan University                                                      Master of Applied Statistics            2023.09 - 2025.06</p>
-        <p style="white-space: pre;">Shanghai University of Finance and Economics      Bachelor of Statistics                     2019.09 - 2023.06</p>
-    </section>
+            <section class="section">
+                <h2>Project</h2>
+                <p><span>2023.11 - 2023.12</span><a href="https://github.com/digbangbang/Machine-learning-Project">Speech Language Recognition</a></p>
+                <p><span>2023.11 - 2023.12</span><a href="https://github.com/digbangbang/Machine-learning-Project">Spam Classification</a></p>
+            </section>
+        </div>
 
-    <section class="section">
-        <h2>Project</h2>
-        <p style="white-space: pre;"> <a href="https://github.com/digbangbang/Machine-learning-Project">Speech Language Recognition</a>            2023.11 - 2023.12</p>
-        <p style="white-space: pre;"> <a href="https://github.com/digbangbang/Machine-learning-Project">Spam Classification</a>            2023.11 - 2023.12</p>
-    </section>
-
-    
+        <div class="image">
+            <img src="照片4.jpg" alt="Li Zhiwei" style="width: 100%; height: auto;">
+        </div>
+    </div>
 </body>
 </html>
